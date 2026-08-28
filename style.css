@@ -1,0 +1,2441 @@
+/* =========================
+   GLOBAL
+========================= */
+
+:root {
+    --pink: #c52f68;
+    --dark-pink: #8f1f4c;
+    --light-pink: #fff0f5;
+
+    --green: #657a3c;
+    --cream: #fffaf4;
+
+    --dark: #382b31;
+    --white: #ffffff;
+
+    --shadow: 0 12px 35px rgba(120, 35, 70, 0.12);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+
+    background: var(--cream);
+
+    color: var(--dark);
+
+    overflow-x: hidden;
+}
+
+
+img {
+    width: 100%;
+
+    display: block;
+}
+
+
+button,
+a {
+    font-family: inherit;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+
+.container {
+    width: min(1150px, 92%);
+
+    margin: auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background: rgba(255, 250, 244, 0.96);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid #f2d8e1;
+}
+
+
+.nav-container {
+
+    min-height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: var(--dark-pink);
+
+    text-decoration: none;
+}
+
+
+.logo-flower {
+
+    font-size: 34px;
+}
+
+
+.logo h2 {
+
+    font-family: "Tiro Devanagari Marathi", serif;
+
+    font-size: 22px;
+
+    line-height: 1;
+
+    color: var(--pink);
+}
+
+
+.logo small {
+
+    color: var(--green);
+
+    font-size: 9px;
+
+    letter-spacing: 0.5px;
+}
+
+
+nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+nav a {
+
+    text-decoration: none;
+
+    color: var(--dark);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+
+    color: var(--pink);
+}
+
+
+.nav-order {
+
+    background: var(--pink);
+
+    color: white !important;
+
+    padding: 11px 17px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 6px 15px rgba(197, 47, 104, 0.25);
+}
+
+
+.menu-btn {
+
+    display: none;
+
+    border: none;
+
+    background: var(--pink);
+
+    color: white;
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 10px;
+
+    font-size: 23px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    background:
+
+        radial-gradient(
+            circle at 15% 20%,
+            #ffe0ea 0,
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #fff8f1,
+            #fde7ee
+        );
+
+    padding: 65px 0;
+}
+
+
+.hero-container {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 55px;
+}
+
+
+.small-title {
+
+    color: var(--pink);
+
+    background: white;
+
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    box-shadow: var(--shadow);
+
+    margin-bottom: 18px;
+}
+
+
+.hero h1 {
+
+    font-family: "Tiro Devanagari Marathi", serif;
+
+    color: var(--pink);
+
+    font-size: clamp(45px, 6vw, 75px);
+
+    line-height: 1.05;
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: var(--green);
+}
+
+
+.hero h3 {
+
+    font-family: "DM Serif Display", serif;
+
+    color: var(--green);
+
+    font-size: 25px;
+
+    margin: 12px 0;
+}
+
+
+.hero p {
+
+    max-width: 560px;
+
+    font-size: 17px;
+
+    color: #665b61;
+
+    line-height: 1.8;
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    margin-top: 25px;
+}
+
+
+.primary-btn,
+.whatsapp-btn {
+
+    border: none;
+
+    text-decoration: none;
+
+    padding: 14px 23px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    font-size: 14px;
+}
+
+
+.primary-btn {
+
+    background: var(--pink);
+
+    color: white;
+
+    box-shadow: 0 8px 20px rgba(197, 47, 104, 0.25);
+}
+
+
+.whatsapp-btn {
+
+    background: #25d366;
+
+    color: white;
+}
+
+
+.hero-features {
+
+    display: flex;
+
+    gap: 22px;
+
+    flex-wrap: wrap;
+
+    margin-top: 32px;
+}
+
+
+.hero-features div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 3px;
+
+    font-size: 22px;
+
+    color: var(--pink);
+}
+
+
+.hero-features span {
+
+    font-size: 11px;
+
+    color: var(--dark);
+
+    font-weight: 600;
+}
+
+
+.hero-image {
+
+    position: relative;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    box-shadow: 0 25px 60px rgba(90, 20, 50, 0.2);
+
+    border: 8px solid rgba(255, 255, 255, 0.8);
+}
+
+
+.hero-image img {
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+}
+
+
+.floating-card {
+
+    position: absolute;
+
+    bottom: 18px;
+
+    left: 18px;
+
+    background: white;
+
+    padding: 11px 16px;
+
+    border-radius: 30px;
+
+    color: var(--pink);
+
+    box-shadow: var(--shadow);
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+
+    padding: 25px 0;
+
+    background: white;
+}
+
+
+.feature-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+.feature-card {
+
+    text-align: center;
+
+    padding: 20px 12px;
+
+    border-right: 1px solid #f1d8e0;
+}
+
+
+.feature-card:last-child {
+
+    border-right: none;
+}
+
+
+.feature-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    display: grid;
+
+    place-items: center;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: var(--light-pink);
+
+    font-size: 23px;
+}
+
+
+.feature-card h3 {
+
+    margin-top: 10px;
+
+    color: var(--dark-pink);
+
+    font-size: 16px;
+}
+
+
+.feature-card p {
+
+    font-size: 12px;
+
+    color: #777;
+
+    margin-top: 4px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+
+    padding: 80px 0;
+}
+
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.section-heading span {
+
+    color: var(--green);
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.section-heading h2 {
+
+    font-family: "Tiro Devanagari Marathi", serif;
+
+    color: var(--pink);
+
+    font-size: 38px;
+
+    margin: 5px 0;
+}
+
+
+.section-heading p {
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.product-card {
+
+    background: white;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    border: 1px solid #f2dce4;
+
+    transition: 0.35s;
+}
+
+
+.product-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(120, 35, 70, 0.18);
+}
+
+
+.product-image {
+
+    overflow: hidden;
+}
+
+
+.product-image img {
+
+    height: 280px;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+
+.product-card:hover .product-image img {
+
+    transform: scale(1.06);
+}
+
+
+.product-info {
+
+    padding: 18px;
+}
+
+
+.product-tag {
+
+    background: var(--light-pink);
+
+    color: var(--pink);
+
+    padding: 4px 9px;
+
+    border-radius: 15px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+.product-info h3 {
+
+    margin-top: 10px;
+
+    color: var(--dark-pink);
+
+    font-size: 18px;
+}
+
+
+.product-info p {
+
+    font-size: 12px;
+
+    color: #777;
+
+    margin: 5px 0 15px;
+}
+
+
+.product-btn {
+
+    border: 1px solid var(--pink);
+
+    background: white;
+
+    color: var(--pink);
+
+    border-radius: 22px;
+
+    padding: 9px 15px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+
+.product-btn:hover {
+
+    background: var(--pink);
+
+    color: white;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-section {
+
+    background: #fff1f5;
+}
+
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+.gallery-item {
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    background: white;
+}
+
+
+.gallery-item img {
+
+    height: 330px;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+
+.gallery-item:hover img {
+
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+
+    padding: 80px 0;
+
+    background: linear-gradient(
+        110deg,
+        #fff7f2,
+        #ffe9f0
+    );
+}
+
+
+.about-container {
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+.about-image {
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 12px solid white;
+
+    box-shadow: var(--shadow);
+
+    max-width: 420px;
+
+    margin: auto;
+}
+
+
+.about-image img {
+
+    aspect-ratio: 1;
+
+    object-fit: cover;
+}
+
+
+.about-content > span {
+
+    color: var(--green);
+
+    font-weight: 700;
+}
+
+
+.about-content h2 {
+
+    font-family: "Tiro Devanagari Marathi", serif;
+
+    font-size: 40px;
+
+    color: var(--pink);
+
+    margin: 5px 0 15px;
+}
+
+
+.about-content p {
+
+    color: #665b61;
+
+    margin-bottom: 12px;
+
+    line-height: 1.8;
+}
+
+
+.about-list {
+
+    margin-top: 25px;
+
+    display: grid;
+
+    gap: 12px;
+}
+
+
+.about-list div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.about-list div > span:first-child {
+
+    font-size: 24px;
+}
+
+
+.about-list strong {
+
+    display: block;
+
+    color: var(--dark-pink);
+}
+
+
+.about-list small {
+
+    color: #777;
+}
+
+
+/* =========================
+   ORDER
+========================= */
+
+.order-section {
+
+    padding: 55px 0;
+}
+
+
+.order-box {
+
+    background:
+        linear-gradient(
+            120deg,
+            var(--dark-pink),
+            var(--pink)
+        );
+
+    color: white;
+
+    border-radius: 30px;
+
+    padding: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    box-shadow: 0 20px 50px rgba(120, 25, 70, 0.25);
+}
+
+
+.order-box span {
+
+    font-size: 13px;
+}
+
+
+.order-box h2 {
+
+    font-family: "Tiro Devanagari Marathi", serif;
+
+    font-size: 35px;
+
+    margin: 5px 0;
+}
+
+
+.order-box p {
+
+    opacity: 0.9;
+
+    font-size: 14px;
+}
+
+
+.white-btn {
+
+    border: none;
+
+    background: white;
+
+    color: var(--pink);
+
+    padding: 14px 22px;
+
+    border-radius: 30px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.contact-card {
+
+    text-align: center;
+
+    background: white;
+
+    padding: 30px 20px;
+
+    border-radius: 22px;
+
+    border: 1px solid #f0dbe3;
+
+    box-shadow: var(--shadow);
+}
+
+
+.contact-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    margin: auto;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: var(--light-pink);
+
+    font-size: 25px;
+}
+
+
+.contact-card h3 {
+
+    margin: 12px 0 5px;
+
+    color: var(--dark-pink);
+}
+
+
+.contact-card p {
+
+    color: #777;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+
+.contact-btn {
+
+    display: inline-block;
+
+    border: none;
+
+    background: var(--pink);
+
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 22px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background: #e10d7b;
+
+    color: white;
+
+    padding-top: 40px;
+}
+
+
+.footer-content {
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1fr;
+
+    gap: 30px;
+
+    padding-bottom: 30px;
+}
+
+
+.footer-content h2 {
+
+    font-family: "Tiro Devanagari Marathi", serif;
+
+    color: #ffb2cb;
+}
+
+
+.footer-content p {
+
+    color: #e7cdd7;
+
+    font-size: 13px;
+
+    margin: 6px 0;
+}
+
+
+.footer-content a {
+
+    color: #ffb2cb;
+
+    text-decoration: none;
+}
+
+
+.footer-content button {
+
+    background: #25d366;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 17px;
+
+    border-radius: 22px;
+
+    font-weight: 700;
+}
+
+
+.copyright {
+
+    border-top: 1px solid rgba(255,255,255,0.12);
+
+    text-align: center;
+
+    padding: 15px;
+
+    color: #d9bdc8;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    nav {
+
+        gap: 12px;
+    }
+
+
+    .hero-container {
+
+        gap: 30px;
+    }
+
+
+    .products-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .gallery-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .menu-btn {
+
+        display: block;
+    }
+
+
+    nav {
+
+        position: absolute;
+
+        top: 75px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: #fffaf4;
+
+        padding: 20px;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+
+    nav.active {
+
+        display: flex;
+    }
+
+
+    nav a {
+
+        padding: 8px 5px;
+    }
+
+
+    .hero {
+
+        padding: 40px 0;
+    }
+
+
+    .hero-container {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero-content {
+
+        text-align: center;
+    }
+
+
+    .hero p {
+
+        margin: auto;
+    }
+
+
+    .hero-buttons {
+
+        justify-content: center;
+    }
+
+
+    .hero-features {
+
+        justify-content: center;
+    }
+
+
+    .feature-grid {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .feature-card {
+
+        border-right: none;
+    }
+
+
+    .about-container {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .order-box {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 35px 20px;
+    }
+
+
+    .footer-content {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .logo h2 {
+
+        font-size: 18px;
+    }
+
+
+    .logo small {
+
+        font-size: 7px;
+    }
+
+
+    .logo-flower {
+
+        font-size: 27px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 48px;
+    }
+
+
+    .hero h3 {
+
+        font-size: 20px;
+    }
+
+
+    .hero p {
+
+        font-size: 14px;
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+    }
+
+
+    .primary-btn,
+    .whatsapp-btn {
+
+        width: 100%;
+    }
+
+
+    .feature-grid {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .feature-card h3 {
+
+        font-size: 13px;
+    }
+
+
+    .feature-card p {
+
+        font-size: 10px;
+    }
+
+
+    .products-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .gallery-grid {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .gallery-item img {
+
+        height: 220px;
+    }
+
+
+    .section {
+
+        padding: 55px 0;
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 31px;
+    }
+
+
+    .about-content h2 {
+
+        font-size: 32px;
+    }
+
+
+    .order-box h2 {
+
+        font-size: 28px;
+    }
+
+}
+
+/* =========================================================
+   PREMIUM ANIMATIONS & SMOOTH SCROLL EFFECTS
+   Add this enhanced animation section
+========================================================= */
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+/* Better page feel */
+body {
+    animation: pageFade 0.8s ease both;
+}
+
+@keyframes pageFade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Selection */
+::selection {
+    background: var(--pink);
+    color: #fff;
+}
+
+/* Animated header */
+.header {
+    transition: 0.35s ease;
+}
+
+.header:hover {
+    box-shadow: 0 8px 30px rgba(120, 35, 70, 0.08);
+}
+
+/* Navigation underline */
+nav a:not(.nav-order) {
+    position: relative;
+}
+
+nav a:not(.nav-order)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: var(--pink);
+    border-radius: 10px;
+    transition: width 0.35s ease;
+}
+
+nav a:not(.nav-order):hover::after {
+    width: 100%;
+}
+
+/* Premium button animations */
+.primary-btn,
+.whatsapp-btn,
+.nav-order,
+.white-btn,
+.product-btn,
+.contact-btn {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.primary-btn::before,
+.whatsapp-btn::before,
+.nav-order::before,
+.white-btn::before,
+.product-btn::before,
+.contact-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(110deg, transparent, rgba(255,255,255,0.45), transparent);
+    transform: skewX(-20deg);
+    transition: left 0.65s ease;
+}
+
+.primary-btn:hover::before,
+.whatsapp-btn:hover::before,
+.nav-order:hover::before,
+.white-btn:hover::before,
+.product-btn:hover::before,
+.contact-btn:hover::before {
+    left: 140%;
+}
+
+.primary-btn:hover,
+.whatsapp-btn:hover,
+.nav-order:hover,
+.white-btn:hover,
+.product-btn:hover,
+.contact-btn:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 14px 28px rgba(120, 35, 70, 0.22);
+}
+
+.primary-btn:active,
+.whatsapp-btn:active,
+.nav-order:active,
+.white-btn:active,
+.product-btn:active,
+.contact-btn:active {
+    transform: scale(0.97);
+}
+
+/* Hero animated background */
+.hero {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.hero::before {
+    width: 320px;
+    height: 320px;
+    background: rgba(255, 171, 200, 0.42);
+    top: -120px;
+    right: 8%;
+    animation: blobFloat 9s ease-in-out infinite;
+}
+
+.hero::after {
+    width: 260px;
+    height: 260px;
+    background: rgba(172, 197, 126, 0.18);
+    bottom: -100px;
+    left: 8%;
+    animation: blobFloat 11s ease-in-out infinite reverse;
+}
+
+@keyframes blobFloat {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, 25px) scale(1.08); }
+    66% { transform: translate(-20px, 45px) scale(0.94); }
+}
+
+/* Hero content entrance */
+.hero-content > * {
+    animation: heroReveal 0.8s ease both;
+}
+
+.hero-content > *:nth-child(1) { animation-delay: 0.05s; }
+.hero-content > *:nth-child(2) { animation-delay: 0.15s; }
+.hero-content > *:nth-child(3) { animation-delay: 0.25s; }
+.hero-content > *:nth-child(4) { animation-delay: 0.35s; }
+.hero-content > *:nth-child(5) { animation-delay: 0.45s; }
+.hero-content > *:nth-child(6) { animation-delay: 0.55s; }
+
+@keyframes heroReveal {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero image premium float */
+.hero-image {
+    animation: heroImageFloat 5s ease-in-out infinite, heroImageReveal 1s ease both;
+}
+
+@keyframes heroImageFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-14px) rotate(0.4deg); }
+}
+
+@keyframes heroImageReveal {
+    from {
+        opacity: 0;
+        transform: translateX(45px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+.hero-image:hover img {
+    transform: scale(1.05);
+}
+
+.hero-image img {
+    transition: transform 0.7s ease;
+}
+
+/* Floating order badge */
+.floating-card {
+    animation: floatingBadge 3s ease-in-out infinite;
+}
+
+@keyframes floatingBadge {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* Feature cards */
+.feature-card {
+    transition: transform 0.35s ease, background 0.35s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    background: linear-gradient(180deg, #fff, var(--light-pink));
+}
+
+.feature-card:hover .feature-icon {
+    animation: iconPop 0.55s ease;
+}
+
+@keyframes iconPop {
+    50% { transform: scale(1.18) rotate(8deg); }
+    100% { transform: scale(1) rotate(0); }
+}
+
+/* Section title decoration */
+.section-heading h2,
+.about-content h2 {
+    position: relative;
+}
+
+.section-heading h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    margin: 10px auto 0;
+    border-radius: 20px;
+    background: linear-gradient(90deg, transparent, var(--pink), transparent);
+}
+
+/* Product cards */
+.product-card {
+    position: relative;
+    transition: transform 0.45s cubic-bezier(.2,.8,.2,1),
+                box-shadow 0.45s ease;
+}
+
+.product-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 22px;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(197,47,104,.5), transparent, rgba(101,122,60,.35));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.product-card:hover::after {
+    opacity: 1;
+}
+
+.product-card:hover {
+    transform: translateY(-12px) rotateX(2deg);
+}
+
+.product-card:hover .product-tag {
+    animation: tagPulse 1s ease infinite;
+}
+
+@keyframes tagPulse {
+    50% { transform: scale(1.07); }
+}
+
+/* Gallery cinematic hover */
+.gallery-item {
+    position: relative;
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+.gallery-item::after {
+    content: "✦ View Design";
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to top, rgba(80,15,45,.65), transparent);
+    color: white;
+    font-weight: 700;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: 0.4s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 22px 45px rgba(120,35,70,.2);
+}
+
+.gallery-item:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* About image */
+.about-image {
+    animation: softFloat 6s ease-in-out infinite;
+}
+
+.about-image:hover {
+    transform: scale(1.03) rotate(1deg);
+}
+
+@keyframes softFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Order section pulse glow */
+.order-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.order-box::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.08);
+    right: -60px;
+    top: -80px;
+    animation: orderGlow 5s ease-in-out infinite;
+}
+
+@keyframes orderGlow {
+    50% {
+        transform: scale(1.5);
+        opacity: 0.6;
+    }
+}
+
+/* Contact cards */
+.contact-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(120,35,70,.15);
+}
+
+.contact-card:hover .contact-icon {
+    animation: contactSpin 0.7s ease;
+}
+
+@keyframes contactSpin {
+    50% { transform: rotate(12deg) scale(1.12); }
+    100% { transform: rotate(0) scale(1); }
+}
+
+/* Footer link hover */
+.footer-content a {
+    transition: 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #fff;
+    padding-left: 5px;
+}
+
+/* Pure CSS scroll-driven reveal for modern browsers */
+@supports (animation-timeline: view()) {
+    .section,
+    .about-section,
+    .gallery-section,
+    .features,
+    .order-section,
+    footer {
+        animation: sectionReveal linear both;
+        animation-timeline: view();
+        animation-range: entry 5% cover 35%;
+    }
+
+    @keyframes sectionReveal {
+        from {
+            opacity: 0.2;
+            transform: translateY(35px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .product-card,
+    .gallery-item,
+    .contact-card {
+        animation: cardReveal linear both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 35%;
+    }
+
+    @keyframes cardReveal {
+        from {
+            opacity: 0;
+            transform: translateY(45px) scale(0.96);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+}
+
+/* Scroll reveal class - works with optional JS */
+.reveal {
+    opacity: 0;
+    transform: translateY(45px);
+    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(.2,.8,.2,1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger helper */
+.reveal.delay-1 { transition-delay: 0.1s; }
+.reveal.delay-2 { transition-delay: 0.2s; }
+.reveal.delay-3 { transition-delay: 0.3s; }
+.reveal.delay-4 { transition-delay: 0.4s; }
+
+/* Respect accessibility settings */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Mobile animation tuning */
+@media (max-width: 700px) {
+    .hero::before {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero::after {
+        width: 180px;
+        height: 180px;
+    }
+
+    .product-card:hover,
+    .gallery-item:hover,
+    .contact-card:hover {
+        transform: translateY(-5px);
+    }
+}
+
+/* =========================================================
+   FINAL PREMIUM DARK FOOTER + ORIGINAL SOCIAL ICON STYLES
+========================================================= */
+
+footer {
+    background: linear-gradient(135deg, #18050d 0%, #2a0b1a 50%, #100308 100%);
+    color: #fff;
+    padding-top: 45px;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: rgba(197, 47, 104, 0.14);
+    filter: blur(40px);
+    top: -200px;
+    left: -120px;
+}
+
+.footer-content,
+.copyright {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-content h2 { color: #ff9fc1; }
+.footer-content p { color: #d9c1cb; }
+
+.footer-content a {
+    color: #f3a6c2;
+    transition: 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #fff;
+    padding-left: 5px;
+}
+
+/* WhatsApp & Instagram original icon buttons */
+.whatsapp-btn i,
+.contact-btn i,
+.white-btn i,
+.footer-content button i,
+.fa-whatsapp,
+.fa-instagram {
+    vertical-align: middle;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #fff !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px) scale(1.08);
+    padding: 0 !important;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.35);
+}
+
+.social-icons .instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-icons .whatsapp {
+    background: #25d366;
+}
+
+.copyright {
+    background: rgba(0, 0, 0, 0.32);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    color: #bfa4b0;
+}
+
+/* =========================================
+   WHATSAPP + INSTAGRAM PREMIUM IMPROVEMENTS
+========================================= */
+
+/* All social buttons */
+
+.whatsapp-btn,
+.nav-order,
+.product-btn,
+.contact-btn,
+.footer-content button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+/* =========================================
+   WHATSAPP ICON
+========================================= */
+
+.fa-whatsapp {
+    display: inline-block;
+    font-size: 18px;
+}
+
+
+/* Hero WhatsApp Button */
+
+.whatsapp-btn {
+    box-shadow:
+        0 8px 22px rgba(37, 211, 102, 0.28);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.whatsapp-btn:hover {
+    transform: translateY(-4px) scale(1.03);
+
+    box-shadow:
+        0 16px 35px rgba(37, 211, 102, 0.4);
+}
+
+
+.whatsapp-btn:hover .fa-whatsapp {
+    animation: whatsappBounce 0.6s ease;
+}
+
+
+/* WhatsApp Contact Button */
+
+.whatsapp-contact-btn {
+    background: #25d366;
+}
+
+
+.whatsapp-contact-btn:hover {
+    background: #1ebe5d;
+}
+
+
+/* Product WhatsApp Buttons */
+
+.product-btn:hover .fa-whatsapp {
+    animation: whatsappBounce 0.5s ease;
+}
+
+
+/* WhatsApp Animation */
+
+@keyframes whatsappBounce {
+
+    0% {
+        transform: scale(1) rotate(0);
+    }
+
+    50% {
+        transform: scale(1.25) rotate(-12deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0);
+    }
+
+}
+
+
+/* =========================================
+   CONTACT ICONS
+========================================= */
+
+.whatsapp-icon {
+    background: #e8fff0 !important;
+    color: #25d366;
+}
+
+
+.instagram-icon {
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f6,
+            #ffe8ed
+        );
+
+    color: #e1306c;
+}
+
+
+.contact-icon i {
+    font-size: 28px;
+}
+
+
+/* =========================================
+   INSTAGRAM BUTTON
+========================================= */
+
+.instagram-btn {
+
+    background:
+        linear-gradient(
+            45deg,
+            #f09433,
+            #e6683c,
+            #dc2743,
+            #cc2366,
+            #bc1888
+        );
+
+    background-size: 250% 250%;
+
+    animation:
+        instagramGradient 5s ease infinite;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+}
+
+
+.instagram-btn:hover {
+
+    transform:
+        translateY(-4px)
+        scale(1.04);
+
+}
+
+
+@keyframes instagramGradient {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+
+.instagram-btn:hover .fa-instagram {
+
+    animation:
+        instagramPop 0.6s ease;
+
+}
+
+
+@keyframes instagramPop {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform:
+            scale(1.3)
+            rotate(12deg);
+    }
+
+    100% {
+        transform:
+            scale(1)
+            rotate(0);
+    }
+
+}
+
+
+/* =========================================
+   NAV ORDER BUTTON
+========================================= */
+
+.nav-order {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+}
+
+
+.nav-order:hover .fa-whatsapp {
+
+    animation:
+        whatsappBounce 0.5s ease;
+
+}
+
+
+/* =========================================
+   FOOTER SOCIAL ICONS
+========================================= */
+
+.social-icons {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 18px;
+
+}
+
+
+.social-icons a {
+
+    width: 46px;
+
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    color: white !important;
+
+    font-size: 21px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.social-icons .instagram {
+
+    background:
+        linear-gradient(
+            45deg,
+            #f09433,
+            #e6683c,
+            #dc2743,
+            #cc2366,
+            #bc1888
+        );
+
+}
+
+
+.social-icons .whatsapp {
+
+    background: #25d366;
+
+}
+
+
+.social-icons a:hover {
+
+    transform:
+        translateY(-6px)
+        scale(1.1);
+
+    box-shadow:
+        0 12px 28px
+        rgba(0, 0, 0, 0.35);
+
+}
+
+
+.social-icons .whatsapp:hover .fa-whatsapp {
+
+    animation:
+        whatsappBounce 0.6s ease;
+
+}
+
+
+.social-icons .instagram:hover .fa-instagram {
+
+    animation:
+        instagramPop 0.6s ease;
+
+}
+
+
+/* =========================================
+   FOOTER LINKS
+========================================= */
+
+.footer-instagram {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.footer-instagram:hover .fa-instagram {
+
+    animation:
+        instagramPop 0.6s ease;
+
+}
+
+
+.footer-content button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.footer-content button:hover .fa-whatsapp {
+
+    animation:
+        whatsappBounce 0.6s ease;
+
+}
+
+
+/* =========================================
+   BETTER CONTACT CARD ANIMATION
+========================================= */
+
+.contact-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.contact-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 140px;
+
+    height: 140px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(197, 47, 104, 0.06);
+
+    top: -70px;
+
+    right: -70px;
+
+    transition: 0.5s ease;
+
+}
+
+
+.contact-card:hover::before {
+
+    transform: scale(2);
+
+}
+
+
+/* =========================================
+   SOCIAL ICON FLOAT ANIMATION
+========================================= */
+
+.social-icons a {
+
+    animation:
+        socialFloat 3s ease-in-out infinite;
+
+}
+
+
+.social-icons a:nth-child(2) {
+
+    animation-delay: 0.5s;
+
+}
+
+
+@keyframes socialFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-4px);
+
+    }
+
+}
+
+
+/* Hover overrides float */
+
+.social-icons a:hover {
+
+    animation-play-state: paused;
+
+    transform:
+        translateY(-6px)
+        scale(1.1);
+
+}
+
+
+/* =========================================
+   MOBILE FIX
+========================================= */
+
+@media (max-width: 700px) {
+
+    .social-icons {
+
+        justify-content: center;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .nav-order {
+
+        justify-content: center;
+
+    }
+
+    .contact-btn {
+
+        width: 100%;
+
+    }
+
+}
